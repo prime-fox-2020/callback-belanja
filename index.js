@@ -1,0 +1,28 @@
+const beli = require('./beli')
+
+class Belanja{
+    constructor(item, harga, waktu){
+        this.item = item
+        this.harga = harga
+        this.waktu = waktu
+    }
+}
+
+let uang = 100000
+const belanja1 = new Belanja('Permen', 5000, 1000)
+const belanja2 = new Belanja('Kopi', 23000, 2000)
+const belanja3 = new Belanja('kue Coklat', 10000, 3000)
+const belanja4 = new Belanja('Kue Keju', 12000, 2000)
+const belanja5 = new Belanja('kue kacang', 8000, 1000)
+
+beli(uang, belanja1, (kembalian) => {
+    beli(uang, belanja2, (kembalian) => {
+        beli(uang, belanja3, (kembalian) => {
+            beli(uang, belanja4, (kembalian) => {
+                beli(uang, belanja5, (kembalian) => {
+                    console.log("selesai")
+                })
+            })
+        })
+    })
+})
