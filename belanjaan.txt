@@ -1,0 +1,7 @@
+sayur,3000,3
+ikan,24000,3
+ayam,32000,3
+tahu,6000,3
+tempe,4000,3
+daging,30000,3
+jamur,10000,3
