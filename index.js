@@ -1,0 +1,2 @@
+const belanja = require('./beli');
+
