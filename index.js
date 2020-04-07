@@ -1,10 +1,10 @@
 const beli = require('./beli.js')
 
 class Groceries {
-  constructor(item, harga, time){
+  constructor(item, harga, waktu){
     this.item = item
     this.harga = harga
-    this.time = time
+    this.waktu = waktu
   }
 }
 
